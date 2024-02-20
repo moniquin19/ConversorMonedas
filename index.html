@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100&family=Raleway:wght@100&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+</head>
+
+<body>
+    <main>
+        <main>
+            <div class="caja">
+                <h2>Conversor de monedas Nacional</h2>
+
+                <div class="cantidad">
+                    <h3>Pesos CLP</h3>
+                    <input type="number" id="clp">
+                </div>
+                <div class="cambio">
+                    <h3>Moneda a convertir:</h3>
+                    <select name="divisa" id="divisa">
+                        <option value="dolar">Dolar</option>
+                        <option value="euro">Euro</option>
+                    </select>
+                </div>
+                <button type="button" id="convertir">Convertir</button>
+                <div class="totalMonto">
+                    <h3 id="total"></h3>
+                </div>
+            </div>
+            <div class="grafico">
+                <canvas id="elGrafico" style="width:100%;max-width:900px"></canvas>
+            </div>
+        </main>
+    </main>
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</body>
+
+</html>
